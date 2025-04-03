@@ -1,20 +1,27 @@
 let equipment = [
     {
-      name: "Токарний верстат",
-      manufacturer: "Металургійний завод",
-      inventoryNumber: "T-12345"
+        name: "Токарний верстат",
+        manufacturer: "Металургійний завод",
+        inventoryNumber: "T-12345",
+        startDate: "2020-05-15",
+        lifespan: "10 років"
     },
     {
-      name: "Фрезерний верстат",
-      manufacturer: "Машинобудівний завод",
-      inventoryNumber: "F-23456"
+        name: "Фрезерний верстат",
+        manufacturer: "Машинобудівний завод",
+        inventoryNumber: "F-23456",
+        startDate: "2018-09-20",
+        lifespan: "12 років"
     },
     {
-      name: "Пробивний прес",
-      manufacturer: "Пресове виробництво",
-      inventoryNumber: "P-34567"
+        name: "Пробивний прес",
+        manufacturer: "Пресове виробництво",
+        inventoryNumber: "P-34567",
+        startDate: "2019-03-10",
+        lifespan: "15 років"
     }
-  ];
+];
+
   
 
   let specification = [
@@ -40,17 +47,23 @@ let equipment = [
     {
       name: "Сталь",
       type: "Метал",
-      pricePerUnit: "120 грн/кг"
+      pricePerUnit: "120 грн",
+      unitOfMeasure: "кг/шт.",
+      alternative: "Титан"
     },
     {
       name: "Алюміній",
       type: "Метал",
-      pricePerUnit: "200 грн/кг"
+      pricePerUnit: "200 грн",
+      unitOfMeasure: "кг/шт.",
+      alternative: "Магній"
     },
     {
       name: "Пластик",
       type: "Полімер",
-      pricePerUnit: "50 грн/кг"
+      pricePerUnit: "50 грн",
+      unitOfMeasure: "кг/шт.",
+      alternative: "Гума"
     }
   ];
   
@@ -63,6 +76,8 @@ let equipment = [
         <td>${equipment[i].name}</td>
         <td>${equipment[i].manufacturer}</td>
         <td>${equipment[i].inventoryNumber}</td>
+        <td>${equipment[i].startDate}</td>
+        <td>${equipment[i].lifespan}</td>
       </tr>
     `;
   }
@@ -91,6 +106,8 @@ let equipment = [
         <td>${materials[i].name}</td>
         <td>${materials[i].type}</td>
         <td>${materials[i].pricePerUnit}</td>
+        <td>${materials[i].unitOfMeasure}</td>
+        <td>${materials[i].alternative}</td>
       </tr>
     `;
   }
