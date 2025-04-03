@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Лабораторна робота №3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Система управління виробництвом</h1>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#equipment">Обладнання</a></li>
+    <li><a data-toggle="tab" href="#specification">Специфікація виробу</a></li>
+    <li><a data-toggle="tab" href="#material">Матеріал</a></li>
+  </ul>
+
+
+  <div class="tab-content">
+
+    <div id="equipment" class="tab-pane fade in active">
+      <h3>Обладнання</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Назва</th>
+            <th>Виробник</th>
+            <th>Інвентарний номер</th>
+          </tr>
+        </thead>
+        <tbody id="equipmentTableBody">
+
+        </tbody>
+      </table>
+    </div>
+
+    <div id="specification" class="tab-pane fade">
+      <h3>Специфікація виробу</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Кількість</th>
+            <th>Назва</th>
+            <th>Тривалість виробництва</th>
+          </tr>
+        </thead>
+        <tbody id="specificationTableBody">
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <div id="material" class="tab-pane fade">
+      <h3>Матеріал</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Назва</th>
+            <th>Тип</th>
+            <th>Ціна за одиницю</th>
+          </tr>
+        </thead>
+        <tbody id="materialTableBody">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
